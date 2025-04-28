@@ -8,7 +8,7 @@ s3 = boto3.client(
   region_name="us-east-1",
 )
 
-bucket, parent, name = "nadeemsya", "vi/dadite_bally", "book.pdf"
+bucket, parent, name = "b", "a/d", "book.pdf"
 resp = s3.create_multipart_upload(Bucket=bucket, Key=f"{parent}/{name}")
 uid = resp["UploadId"]
 
